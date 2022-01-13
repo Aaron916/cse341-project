@@ -16,7 +16,15 @@
       </div>
     </div>
     <div class="container">
+      <% for (let i of items ) {%>
+        <div>
+          <p><%=i.name%></p>
+          <p>Price: <%= i.price %></p>
+          <p>Description <%= i.description %></p>
+          <img src="<%= i.imageUrl %>"></img>
+        </div>
 
+      <% } %>
     </div>
 
 
